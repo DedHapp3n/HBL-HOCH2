@@ -13,6 +13,15 @@ The immediate goal is not CFW or persistence. The first target is much smaller a
 
 > **Status:** very early research. Nothing here should be treated as a finished exploit, CFW, or stable launcher.
 
+## Start here
+
+- **[Lab setup](docs/SETUP.md)** — host, WSL/network notes and the untouched ns2jb baseline
+- **[Research log](docs/RESEARCH.md)** — dated findings with evidence status
+- **[Architecture](docs/ARCHITECTURE.md)** — separation between entry point, platform primitives and launcher
+- **[Test matrix](docs/TEST_MATRIX.md)** — firmware/app/host compatibility and capability tracking
+- **[Experiment template](docs/EXPERIMENT_TEMPLATE.md)** — copy this for every hardware test
+- **[Agent rules](AGENTS.md)** — rules for Codex/local LLM work in this repository
+
 ## Current research base
 
 Public work currently used as reference:
