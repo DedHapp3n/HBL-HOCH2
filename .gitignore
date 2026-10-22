@@ -1,0 +1,53 @@
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Local environment
+.env
+.env.*
+!.env.example
+
+# Logs / captures / exploit run artifacts
+runs/
+logs/
+captures/
+crashdumps/
+*.log
+
+# Private research material — never commit
+private/
+dumps/
+firmware/
+roms/
+keys/
+secrets/
+prod.keys
+title.keys
+*.keys
+*.xci
+*.xci.*
+*.nsp
+*.nsz
+*.nca
+*.tik
+*.cert
+
+# Console-unique / account material
+device/
+console/
+credentials/
+
+# Temporary build output
+build/
+out/
+dist/
+tmp/
+.cache/
+node_modules/
+
+# WSL / Linux noise
+*~
