@@ -23,6 +23,16 @@ The immediate goal is not CFW or persistence. The first target is much smaller a
 - **[Experiment template](docs/EXPERIMENT_TEMPLATE.md)** — copy this for every hardware test
 - **[Agent rules](AGENTS.md)** — rules for Codex/local LLM work in this repository
 
+## Related ecosystem projects
+
+Useful projects currently appearing around ns2jb / Switch 2 research:
+
+- [mhzsajan/ns2jb](https://github.com/mhzsajan/ns2jb) — GitHub mirror/rework of the Switch 2 FS jailbreak flow
+- [Ludi-1225/switch2-ns2jb](https://github.com/Ludi-1225/switch2-ns2jb) — 22.5.0-focused ns2jb research/watch item
+- [cpypwn/mac2jb](https://github.com/cpypwn/mac2jb) — Apple Silicon USB-HID tool for typing the ns2jb SmileBASIC bootstrap
+
+More notes: **[docs/ECOSYSTEM.md](docs/ECOSYSTEM.md)**
+
 ## Current research base
 
 Public work currently used as reference:
