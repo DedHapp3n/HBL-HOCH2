@@ -9,7 +9,7 @@ supported = set(
     "\r\n\t "
     "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
     "0123456789"
-    "-=[]\\;'"+String.fromCharCode(96)+",./"
+    "-=[]\\;'\x60,./"
     "!@#$%^&*()_+{}|:\"~<>?"
 )
 
