@@ -19,6 +19,7 @@ The immediate goal is not CFW or persistence. The first target is much smaller a
 - **[Research log](docs/RESEARCH.md)** — dated findings with evidence status
 - **[Entry points](docs/ENTRYPOINTS.md)** — SmileBASIC, Artemis and future application routes
 - **[Architecture](docs/ARCHITECTURE.md)** — separation between entry point, platform primitives and launcher
+- **[Risk notes](docs/RISK.md)** — brick/persistence boundaries and safe research policy
 - **[Test matrix](docs/TEST_MATRIX.md)** — firmware/app/host compatibility and capability tracking
 - **[Experiment template](docs/EXPERIMENT_TEMPLATE.md)** — copy this for every hardware test
 - **[Agent rules](AGENTS.md)** — rules for Codex/local LLM work in this repository
