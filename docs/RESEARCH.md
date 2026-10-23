@@ -1,6 +1,6 @@
 # HBL² Switch 2 Research Log
 
-Last updated: **2026-10-22**
+Last updated: **2026-10-23**
 
 This file is the living notebook for Switch 2 homebrew / reverse-engineering developments relevant to HBL².
 
@@ -13,9 +13,9 @@ This file is the living notebook for Switch 2 homebrew / reverse-engineering dev
 
 ---
 
-## 2026-10-22 — ns2jb
+## 2026-10-22/23 — ns2jb
 
-**Status:** VERIFIED UPSTREAM
+**Status:** VERIFIED BY US (Windows host-port) / VERIFIED UPSTREAM (original distribution)
 
 Primary sources:
 
@@ -46,19 +46,27 @@ We do not need a full CFW before beginning useful work. The immediate research q
 
 ### Local reproduction status
 
-**NOT YET VERIFIED BY US**
+**VERIFIED BY US — 2026-10-23, Windows host-port**
 
-Planned first reproduction:
+Observed hardware configuration:
 
-- Switch 2 system software 23.0.1
-- SmileBASIC 4.4.9
-- Linux host
-- Node.js 22+
-- run unmodified upstream `ns2jb`
-- preserve the generated `runs/` logs
-- record exact upstream commit
+- Switch 2 system software **23.0.1**
+- SmileBASIC **4.4.9**
+- native Windows host
+- Node.js **24.x**
+- `DedHapp3n/ns2jb`, branch `windows-host-port`
 
-No HBL² modification should be introduced until the unmodified demo succeeds at least once.
+The Windows-hosted path completed end-to-end on our hardware and behaved like
+the previous ns2jb path. The same known post-run crash was observed after the
+successful run. Treat this as verification of the Windows host-port and ns2jb
+execution path, **not** as evidence that the post-run shutdown is clean.
+
+The branch head when the result was reported was
+`998c9660fc8e167af047af3d473a537af12373c8`; the exact local checkout hash was
+not separately captured during the run.
+
+The stricter historical M0 goal of reproducing the completely unmodified
+upstream distribution on Linux/macOS has still not been performed locally.
 
 ---
 
@@ -195,14 +203,15 @@ The "Album → HBL²" experience is a **long-term UX goal**, not a currently dem
 
 ## First HBL² milestones
 
-### M0 — Reproduce upstream
+### M0 — Reproduce execution path
 
-- [ ] Linux host stable
-- [ ] Node.js 22+
-- [ ] upstream ns2jb untouched
-- [ ] FS execution verified
-- [ ] logs archived
-- [ ] exact upstream commit recorded
+- [x] native Windows host stable
+- [x] Node.js 24.x
+- [x] SmileBASIC/ns2jb execution path verified on owned hardware
+- [x] FS native execution path verified through the Windows host-port
+- [ ] unmodified upstream Linux/macOS distribution reproduced locally
+- [ ] successful run logs archived in the HBL² experiment record
+- [ ] exact local tested checkout hash captured during a future reproduction
 
 ### M1 — Own code
 
