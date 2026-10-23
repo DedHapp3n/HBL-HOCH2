@@ -7,13 +7,14 @@ This matrix records what has actually been tested. Empty cells are unknown, not 
 | Date | Console | System | Entry app | App version | Upstream commit | Host | Result | Notes |
 |---|---|---|---|---|---|---|---|---|
 | 2026-10-22 | Switch 2 | 23.0.1 | SmileBASIC | 4.4.9 | TBD | Linux/WSL planned | NOT TESTED | Initial HBL² baseline |
+| 2026-10-23 | Switch 2 | 23.0.1 | SmileBASIC | 4.4.9 | upstream capture 95f5525 + Windows host-port | Windows / Node.js 24.x | VERIFIED BY US | End-to-end path completed; same known post-run crash observed; exact local checkout hash not separately captured |
 
 ## Capability matrix
 
 | Capability | Upstream reported | Verified by HBL² | First experiment |
 |---|---:|---:|---|
-| SmileBASIC initial code execution | Yes | No | M0 |
-| FS exploit / FS native execution | Yes | No | M0 |
+| SmileBASIC initial code execution | Yes | Yes — Windows host-port | M0 |
+| FS exploit / FS native execution | Yes | Yes — Windows host-port | M0 |
 | Custom HBL² native payload | Not applicable | No | M1 |
 | Deterministic custom return marker | Not applicable | No | M1 |
 | Basic graphical output | Community work exists | No | M2 |
