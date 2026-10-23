@@ -143,3 +143,38 @@ For every newly discovered project, record:
 - whether HBL² should adopt code, copy an idea, or merely watch it.
 
 This prevents the repository from becoming a pile of links with no technical value.
+
+
+---
+
+## Flipper Zero BadUSB bootstrap script
+
+Source:
+
+https://ideone.com/rhBFE9
+
+Discovery/context:
+
+https://www.reddit.com/r/switch2hacks/comments/1xcugup/an_easy_way_to_transcribe_the_ns2jb_script/
+
+**Status:** USEFUL NOW — bootstrap automation idea
+
+The shared script is a Flipper Zero BadUSB/DuckyScript-style automation for typing the current ns2jb `bootstrap.bas` into SmileBASIC.
+
+Reported behavior from the community post:
+
+- intended for Switch 2 + Flipper Zero using matching **en-US** keyboard layout;
+- types the bootstrap automatically;
+- takes roughly **20–30 minutes**;
+- timing/newline handling can still be imperfect;
+- later comments report appending an automatic save step for slot 0 / `NS2`;
+- ESP32-S3-based alternatives are also being discussed/used.
+
+HBL² takeaway:
+
+The Flipper is not required for this workflow. For our purposes the interesting primitive is simply **USB HID keyboard emulation**.
+
+A suitable microcontroller with native USB device support (for example an ESP32-S2/S3 class board) can potentially provide the same convenience without buying a Flipper Zero.
+
+Do not assume a classic ESP32 board has the required native USB-device capability; identify the exact chip first.
+
