@@ -11,7 +11,7 @@ The immediate goal is not CFW or persistence. The first target is much smaller a
 5. load our own homebrew payloads and assets from storage;
 6. later investigate a nostalgic launcher entry flow inspired by the classic 3DS / Switch homebrew experience.
 
-> **Status:** very early research. Nothing here should be treated as a finished exploit, CFW, or stable launcher.
+> **Status:** very early research. The ns2jb execution path has now been reproduced on owned hardware using the Windows host-port. Nothing here should be treated as a finished CFW or stable launcher.
 
 ## Start here
 
@@ -88,7 +88,8 @@ Initial research target:
 - Nintendo Switch 2
 - System software: **23.0.1**
 - SmileBASIC: **4.4.9**
-- ns2jb host: Linux / Node.js 22+
+- ns2jb host: **Windows / Node.js 24.x — verified on owned hardware**
+- upstream Linux/macOS host remains the reference implementation
 
 These versions are recorded for reproducibility and may not describe future compatibility.
 
